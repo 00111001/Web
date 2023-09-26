@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+.gif-container {
+    position: absolute;
+    width: 15%;
+    height: auto;
+    top: 0;
+    left: 60%;
+    overflow: hidden; /* Verhindert das Überlaufen des GIFs */
+    justify-content: center;
+    align-items: center;
+}
+
+.gif-container img {
+    width: 100%;
+    height: auto; /* Streckt das Bild, um die Breite des Bildschirms auszufüllen */
+}
+
+.orange-rectangle {
+    background-color: orange;
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.white-circle {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    top: 10%;
+    border-radius: 50%;
+    transform: translate(0%, 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Sorgt dafür, dass das Bild im Kreis bleibt */
+}
+
+
+.white-circle img {
+    max-width: 123%;
+    max-height: 123%;
+    object-fit: cover; /* Zuschnitt auf das Seitenverhältnis des Containers */
+    border-radius: 50%;
+}
+
+/* Stil für das Menü */
+.menu {
+    width: 20%;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    top: 60%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* Z-Index erhöhen, um über anderen Elementen zu liegen */
+}
+
+/* Stil für die Menüpunkte */
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.menu-item {
+    margin: 45px 0;
+}
+
+/* Stil für die Links in den Menüpunkten */
+.menu-item a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.siteheader-item {
+    width: 135px;
+    height: 25px;
+    left: 22%;
+    top: 17%;
+    padding: 10px;
+    margin: 10px;
+    z-index: 0;
+    position: absolute;
+    display: flex;
+    align-items: center; /* Vertikal zentrieren */
+    justify-content: center; /* Horizontal zentrieren */
+    text-align: center; /* Text horizontal zentrieren */
+}
+
+.siteheader-item h2 {
+    margin: 0; /* Außenabstand des H2-Tags entfernen */
+}
+
+
+.portfolio-item {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    width: 800px; /* Feste Breite von 1200px */
+    height: 450px;
+    top: 27%;
+    left: 22%; /* 30% von links positionieren */
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 0;
+    position: absolute; /* Absolute Positionierung innerhalb des Containers */
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    top: 26%; /* Lasse diese Zeile unverändert */
+    left: 78%; /* Lasse diese Zeile unverändert */
+    margin: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 0;
+    position: absolute; /* Absolute Positionierung innerhalb des Containers */
+    bottom: 0; /* Füge diese Zeile hinzu, um den Container nach unten zu verschieben */
+}
+
+
+.header {
+    background-color: orange;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.header h2 {
+    margin: 0;
+    color: white;
+}
+
+.content {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.content p {
+    margin: 0;
+    color: #333;
+}
+
+/* Style the list to remove default list styles */
+.social-media-list {
+  list-style: none;
+  padding: 0;
+  display: flex; /* Damit die Logos in einer Reihe angeordnet werden */
+}
+
+/* Style the link container */
+.social-media-link {
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  margin: 5px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+.social-media-link img {
+    max-width: 50px; /* Maximale Breite des Bildes */
+    max-height: 50px; /* Maximale Höhe des Bildes */
+}
+
+
+
+
+
+
+
