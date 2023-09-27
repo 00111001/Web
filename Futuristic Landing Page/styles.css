@@ -1,0 +1,78 @@
+body {
+    background-image: url("img/landingpage-background.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #f0f0f0; /* Fallback-Hintergrundfarbe für den Fall, dass das Bild nicht geladen wird */
+    margin: 0; /* Entfernt den Standardrand des Body-Elements */
+    padding: 0; /* Entfernt das Standardpadding des Body-Elements */
+}
+
+img {
+    position: absolute;
+    left: 50%;
+    max-width: 50%;
+}
+
+.text {
+    left: 10%;
+    color: white;
+    position: absolute; /* Ändert die Positionierung des Textcontainers auf "relativ" */
+}
+
+.text-title {
+    font-family: "Open Sans", Arial, sans-serif;
+    text-decoration: underline;
+    text-align: left;
+}
+
+.text-text {
+    font-family: "Open Sans", Arial, sans-serif;
+    max-width: 550px; /* Legt die maximale Breite des Texttexts auf 150px fest */
+    margin: 0 auto; /* Zentriert den Text horizontal */
+    padding: 1px; /* Fügt Innenabstand hinzu */
+}
+/* Basic button styles */
+.animated-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: #fff;
+    position: absolute;
+    left:53%;
+    top: 68%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    color: black;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover state */
+.animated-button:hover {
+    background-color: #0056b3;
+}
+
+/* Click animation */
+.animated-button:active {
+    transform: scale(0.95);
+}
+
+/* Keyframe animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Apply keyframe animation */
+.animated-button.pulse {
+    animation: pulse 1s infinite;
+}
