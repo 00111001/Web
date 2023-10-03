@@ -1,0 +1,34 @@
+body{
+    background-image: url("img/landingpage-background.jpg");
+    background-attachment: fixed;
+    background-size: cover; /* Das Bild wird so skaliert, dass es den gesamten Hintergrund abdeckt. */
+}
+
+
+/* Stil für das Menü */
+.Header-Menu {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-item {
+    margin: 45px 0;
+    list-style: none
+}
+
+/* Stil für die Links in den Menüpunkten */
+.menu-item a {
+    text-decoration: none;
+    /*font-family: "Helvetica Neue", Arial, sans-serif;*/
+    font-family: "Roboto", Arial, sans-serif;
+    /*font-family: "Open Sans", Arial, sans-serif;*/
+    color: white;
+    font-weight: bold;
+}
+.menu-item:hover {
+  opacity: 0.7; /* Opazität ändert sich, wenn der Mauszeiger darüber schwebt */
+}
